@@ -1,4 +1,64 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Gilroy';
+  list-style: none;
+}
+body {
+  background-color: gray;
+}
+.container {
+  max-width: 1920px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.head {
+  padding: 30px 0;
+}
+.head .container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.head__hamburger {
+  width: 66px;
+  height: 66px;
+  background-image: url(../img/hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.head__logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+.head__logo__img {
+  line-height: 0;
+}
+.head__logo__desc {
+  color: white;
+  margin-left: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.head__nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-left: auto;
+}
+.head__nav a {
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #E21C2B;
+  text-decoration: none;
+  padding: 0 33px;
 }
