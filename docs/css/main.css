@@ -26,6 +26,12 @@
   padding-right: 120px;
   padding-top: 46px;
 }
+.head.black .head__language a {
+  color: #202020;
+}
+.head.black .head__language a.active {
+  color: #E21C2B;
+}
 .hero__hamburgerblock {
   display: -webkit-box;
   display: flex;
@@ -148,7 +154,7 @@
 }
 .hero__links a {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 38px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
