@@ -1,0 +1,128 @@
+@main: #E21C2B; 
+
+.content__editor {
+    p {
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.6;
+      margin-top: 30px;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+    h3 {
+      font-size: 26px;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+    h4 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+    h5 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 24px;
+      color: @main;
+    }
+    h6 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 24px;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+      grid-gap: 13px;
+      margin-top: 24px;
+      li {
+        position: relative;
+        padding-left: 20px;
+        font-size: 18px;
+        &:before {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          background-color: @main;
+          border-radius: 100%;
+          position: absolute;
+          left: 0;
+          top: 7px;
+        }
+      }
+    }
+    a {
+      color: @main;
+      text-decoration: underline;
+    }
+    table {
+      margin-top: 24px;
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 1px;
+      tr {
+        &:nth-child(1) {
+          td {
+            background-color: @main;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            border: 1px solid @main;
+          }
+        }
+      }
+      td {
+        padding: 18px 20px;
+        border: 1px solid #f2ece9;
+        background-color: white;
+        color: @main;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+    ol {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
+        grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+        grid-gap: 13px;
+        counter-reset: li;
+        li {
+            margin-left: 18px;
+            position: relative;
+            font-size: 18px;
+            &:before {
+                content: counter(li);
+                counter-increment: li;
+                color: @main;
+                font-weight: 600;
+                position: absolute;
+                left: -18px;
+                top: 0;
+                
+            }
+        }
+    }
+  }
+
+
+  

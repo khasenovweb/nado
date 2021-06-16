@@ -1,0 +1,71 @@
+{% set title = 'Статьи' %}
+
+{% extends 'layouts/_page.html' %}
+
+{% block content %}
+
+<!-- ====================== breadrumbssec ====================== -->
+<section class="breadrumbssec">
+    <div class="page_container">
+        <ul class="bredcrumbs"><span><span><a href="http://nadocompany.ru/">Главная страница</a> » <span class="breadcrumb_last" aria-current="page">Производство яблочного пюре</span></span></span></ul>
+    </div>
+</section>
+<!-- ====================== END breadrumbssec ====================== -->
+<!-- ====================== articlesheader ====================== -->
+<section class="articlesheader">
+    <div class="page_container">
+        <div class="articlesheader__content">
+            <h1 class="articlesheader__title uppercase">Статьи</h1>
+            <button class="btn border nobg">Подписаться на новости</button>
+        </div>
+    </div>
+</section>
+<!-- ====================== END articlesheader ====================== -->
+<!-- ====================== articlesitems ====================== -->
+<section class="articlesitems">
+    <div class="page_container">
+        <div class="articlesitems__content">
+            <!-- articlesitems__item -->
+            <a href="/" class="articlesitems__item">
+                <div class="articlesitems__item__img" style="background-image: url(img/article.jpg);"></div>
+                <div class="articlesitems__item__title">Коллекция весна 2021</div>
+                <div class="articlesitems__item__date">30 января 01:10</div>
+            </a>
+            <!-- END articlesitems__item -->
+            {% for i in range(0, 10) -%}
+            <!-- articlesitems__item -->
+            <a href="/" class="articlesitems__item">
+                <div class="articlesitems__item__img" style="background-image: url(img/article.jpg);"></div>
+                <div class="articlesitems__item__title">Коллекция весна 2021</div>
+                <div class="articlesitems__item__date">30 января 01:10</div>
+            </a>
+            <!-- END articlesitems__item -->
+            {%- endfor %}
+        </div>
+    </div>
+</section>
+<!-- ====================== END articlesitems ====================== -->
+<!-- ====================== END articlespagination====================== -->
+<section class="articlespagination">
+    <div class="page_container">
+        <div class="articlespagination__content">
+            <div class="nav-links">
+                <a class="prev page-numbers" href="https://altius-rf.ru/objects/">
+                    <img src="https://nadocompany.ru/wp-content/themes/nado/public/img/news__slider__arrow__left.svg" alt="">
+                </a>
+                <span aria-current="page" class="page-numbers current">1</span>
+                <a class="page-numbers" href="https://altius-rf.ru/objects/page/2">2</a>
+                <a class="page-numbers" href="https://altius-rf.ru/objects/page/2">3</a>
+                <a class="next page-numbers" href="https://altius-rf.ru/objects/page/2">
+                    <img src="https://nadocompany.ru/wp-content/themes/nado/public/img/news__slider__arrow__right.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====================== END articlespagination ====================== -->
+
+
+
+
+{% endblock %}

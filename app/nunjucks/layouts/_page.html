@@ -13,7 +13,7 @@
 </head>
 <body>
 	<!-- ==================================hero================================== -->
-	<div class="hero">
+	<div class="hero page__hero">
 		<div class="hero__hamburgerblock black">
 			<div class="head__hamburger"></div>
 			<div class="head__logo">
@@ -101,9 +101,52 @@
 	</div>
 
 	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/mask.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/validate.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+
+		$('[data-paralax-scene]').each(function(i, el){
+			console.log(el);
+			console.log(i);
+			var parallaxInstance = new Parallax(el);
+		});
+
+		$.validator.addMethod(
+			"phone",
+			function (value) {
+				return value.replace(/\D+/g, "").length >= 11;
+			},
+			"Введите номер телефона полностью"
+		);
+
+		$("form[data-validate='submit-your-application']").each(function (i, el) {
+			$(el).validate({
+			rules: {
+				phone: "phone",
+			},
+			submitHandler: function(form) {
+
+				show_modal_success(form); //Показываем модальное окно после успешной отправки формы
+
+				var data = $(form).serialize();
+				$.ajax({
+				url: 'https://altius-rf.ru/mail.php',
+				type: 'post',
+				data: data,
+				success: function() {
+					$('[data-modal]').hide();
+					$('[data-modal="3"]').show();
+					console.log('Отправлено');
+				}
+				});
+			}
+			});
+		});
+	</script>
 </body>
 </html>

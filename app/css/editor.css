@@ -1,0 +1,116 @@
+.content__editor p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+.content__editor img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.content__editor h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.content__editor h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.content__editor h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.content__editor h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.content__editor h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 24px;
+  color: #E21C2B;
+}
+.content__editor h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.content__editor ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
+  grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+  grid-gap: 13px;
+  margin-top: 24px;
+}
+.content__editor ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.content__editor ul li:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #E21C2B;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.content__editor a {
+  color: #E21C2B;
+  text-decoration: underline;
+}
+.content__editor table {
+  margin-top: 24px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 1px;
+}
+.content__editor table tr:nth-child(1) td {
+  background-color: #E21C2B;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #E21C2B;
+}
+.content__editor table td {
+  padding: 18px 20px;
+  border: 1px solid #f2ece9;
+  background-color: white;
+  color: #E21C2B;
+  font-size: 16px;
+  font-weight: 600;
+}
+.content__editor ol {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(-webkit-max-content, 0));
+  grid-template-rows: repeat(auto-fill, minmax(max-content, 0));
+  grid-gap: 13px;
+  counter-reset: li;
+}
+.content__editor ol li {
+  margin-left: 18px;
+  position: relative;
+  font-size: 18px;
+}
+.content__editor ol li:before {
+  content: counter(li);
+  counter-increment: li;
+  color: #E21C2B;
+  font-weight: 600;
+  position: absolute;
+  left: -18px;
+  top: 0;
+}

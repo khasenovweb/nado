@@ -1,8 +1,7 @@
  $(document).ready(function(){
+	
+	
  	$('.hero__slider').owlCarousel({
- 		// animateOut: 'animate__fadeOutDown',
- 		// animateIn: 'animate__fadeInDown',
- 		// animateOut: 'fadeOut',
  		smartSpeed:450,
  		items: 1,
  		nav: true,
@@ -18,9 +17,7 @@
  		nav: true,
  		dots: true,
  		margin: 20,
- 		center: true,
  		navText: ["<img src=\"img/news__slider__arrow__left.svg\">","<img src=\"img/news__slider__arrow__right.svg\" >"],
- 		loop: true,
  		responsive: {
  			0: {
  				items: 1,
@@ -33,6 +30,62 @@
  			}
  		}
  	});
+
+	$('.sliderblock__slider').owlCarousel({
+		items: 2,
+		nav: true,
+		margin: 75,
+		navText: ["<img src=\"img/news__slider__arrow__left.svg\">","<img src=\"img/news__slider__arrow__right.svg\" >"],
+		responsive: {
+			0: {
+				items: 1,
+				nav: false,
+			},
+			1100: {
+				items: 2,
+				nav: true,
+			}
+		}
+	});
+
+	$('.sec-4__slider').owlCarousel({
+		items: 1,
+		nav: true,
+		navText: ["<img src=\"img/news__slider__arrow__left.svg\">","<img src=\"img/news__slider__arrow__right.svg\" >"],
+		responsive: {
+			0: {
+				nav: false,
+			},
+			1100: {
+				nav: true,
+			}
+		}
+	});
+
+	$('.sec-6__slider').owlCarousel({
+		items: 4,
+		nav: true,
+		margin: 75,
+		navText: ["<img src=\"img/news__slider__arrow__left.svg\">","<img src=\"img/news__slider__arrow__right.svg\" >"],
+		responsive: {
+			0: {
+				nav: false,
+				items: 1,
+			},
+			800: {
+				nav: true,
+				items: 2,
+			},
+			1100: {
+				nav: true,
+				items: 3,
+			},
+			1300: {
+				nav: true,
+				items: 4,
+			}
+		}
+	});
 
  	$('[data-mask="phone"]').each(function(i, el){
  	       $(el).mask("+7 (999) 999-99-99");
@@ -119,7 +172,6 @@
  	    	$('.nav').toggleClass('active');
  	    	$('.hero__hamburgerblock').toggleClass('active');
  	    });
-
  });
 
 

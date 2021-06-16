@@ -1,12 +1,423 @@
-{% set title = 'Главная' %}
+{% set title = 'Внутренняя страница' %}
 
 {% extends 'layouts/_page.html' %}
 
 {% block content %}
 
+<!-- ====================== sec-1 ====================== -->
+<section class="sec-1" style="background-image: url(img/sec-1-bg.jpg);">
+    <div class="page_container">
+        <div class="sec-1__content">
+            <div class="sec-1__img" data-paralax-scene>
+                <div class="sec-1__img__main" style="background-image: url(img/sec-1.png);" data-depth="0.2"></div>
+                <img class="sec-1__img__listya" src="img/sec-1-listya.png" alt="" data-depth="0.7">
+            </div>
+            <div class="sec-1__text">
+                <h1 class="sec-1__title">Наполнители для <br> молочной продукции</h1>
+                <p class="sec-1__desc">Преимущество наполнителя для молочной продукции</p>
+                <div class="sec-1__items">
+                    <div class="sec-1__item">
+                        <div class="sec-1__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                        <div class="sec-1__item__title">Краткое <br> преимущество</div>
+                    </div>
+                    <div class="sec-1__item">
+                        <div class="sec-1__item__icon" style="background-image: url(img/sec-1-item-2.png);"></div>
+                        <div class="sec-1__item__title">Краткое <br> преимущество</div>
+                    </div>
+                    <div class="sec-1__item">
+                        <div class="sec-1__item__icon" style="background-image: url(img/sec-1-item-3.png);"></div>
+                        <div class="sec-1__item__title">Краткое <br> преимущество</div>
+                    </div>
+                </div>
+                <button class="btn border" data-modal-show="1">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+    <div class="sec-1__button">
+        <img src="img/sec-1-btn.svg" alt="">
+    </div>
+</section>
+<!-- ====================== END sec-1 ====================== -->
+<!-- ====================== sec-2 ====================== -->
+<section class="sec-2">
+    <div class="page_container">
+        <div class="sec-2__content">
+            <div class="sec-2__content__top">
+                <div class="sec-2__videoblock" style="background-image: url(img/sec-2.jpg);">
+                    <div class="sec-2__videoblock__yagoda"  data-paralax-scene>
+                        <img src="img/sec-2-yagoda-top.png" alt="" data-depth="3">
+                    </div>
+                    <div class="sec-2__videoblock__listya"  data-paralax-scene>
+                        <img src="img/sec-2-listya.png" alt="" data-depth="0.1">
+                    </div>
+                    <img class="sec-2__videoblock__img" src="img/sec-2-title.svg" alt="">
+                    <div class="sec-2__videoblock__desc">Узнайте что будет в коротком видео</div>
+                </div>
+                <div class="sec-2__textblock">
+                    <div class="sec-2__textblock__yagoda"  data-paralax-scene>
+                        <img src="img/sec-2-yagoda-bottom.png" alt="" data-depth="5">
+                    </div>
+                    <div class="sec-2__textblock__title">Краткое преимущество нашего наполнителя</div>
+                    <div class="sec-2__textblock__items">
+                        <div class="sec-2__textblock__item">
+                            <div class="sec-2__textblock__item__icon" style="background-image: url(img/sec-2-item.svg);"></div>
+                            <div class="sec-2__textblock__item__text">
+                                <div class="sec-2__textblock__item__title">Описание преимущества</div>
+                                <div class="sec-2__textblock__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                            </div>
+                        </div>
+                        <div class="sec-2__textblock__item">
+                            <div class="sec-2__textblock__item__icon" style="background-image: url(img/sec-2-item.svg);"></div>
+                            <div class="sec-2__textblock__item__text">
+                                <div class="sec-2__textblock__item__title">Описание преимущества</div>
+                                <div class="sec-2__textblock__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-2__content__bottom">
+                <div class="sliderblock">
+                    <div class="sliderblock__title">Виды наполнителей</div>
+                    <div class="sliderblock__slider owl-carousel">
+                        <div class="sliderblock__slider__item">
+                            <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                            <div class="sliderblock__slider__item__title">Моновкусы</div>
+                            <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                            <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                        </div>
+                        <div class="sliderblock__slider__item">
+                            <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                            <div class="sliderblock__slider__item__title">Моновкусы</div>
+                            <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                            <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                        </div>
+                        <div class="sliderblock__slider__item">
+                            <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                            <div class="sliderblock__slider__item__title">Моновкусы</div>
+                            <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                            <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                        </div>
+                        <div class="sliderblock__slider__item">
+                            <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                            <div class="sliderblock__slider__item__title">Моновкусы</div>
+                            <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                            <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                        </div>
+                        <div class="sliderblock__slider__item">
+                            <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                            <div class="sliderblock__slider__item__title">Моновкусы</div>
+                            <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                            <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====================== END sec-2 ====================== -->
+<!-- ====================== sec-3 ====================== -->
+<section class="sec-3" style="background-image: url(img/sec-1-bg.jpg);">
+    <div class="page_container">
+        <div class="sec-3__content">
+            <div class="sec-3__content__listya-left" data-paralax-scene>
+                <img src="img/sec-3-listya-left.png" alt="" data-depth="0.3">
+                <img src="img/sec-3-listya-left-2.png" alt="" data-depth="1">
+            </div>
+            <div class="sec-3__content__listya-right" data-paralax-scene>
+                <img src="img/sec-3-listya-right.png" alt="" data-depth="0.5">
+                <img src="img/sec-3-listya-right-2.png" alt="" data-depth="1">
+            </div>
+            <h2 class="sec__title">Преимущество наполнителя для <br> молочной продукции</h2>
+            <div class="sec-3__items">
+                <div class="sec-3__item">
+                    <div class="sec-3__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                    <div class="sec-3__item__text">
+                        <div class="sec-3__item__title">Заголово преимущества</div>
+                        <div class="sec-3__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    </div>
+                </div>
+                <div class="sec-3__item">
+                    <div class="sec-3__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                    <div class="sec-3__item__text">
+                        <div class="sec-3__item__title">Заголово преимущества</div>
+                        <div class="sec-3__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    </div>
+                </div>
+                <div class="sec-3__item">
+                    <div class="sec-3__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                    <div class="sec-3__item__text">
+                        <div class="sec-3__item__title">Заголово преимущества</div>
+                        <div class="sec-3__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    </div>
+                </div>
+                <div class="sec-3__item">
+                    <div class="sec-3__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                    <div class="sec-3__item__text">
+                        <div class="sec-3__item__title">Заголово преимущества</div>
+                        <div class="sec-3__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====================== END sec-3 ====================== -->
+<!-- ====================== sec-4 ====================== -->
+<section class="sec-4">
+    <div class="page_container">
+        <div class="sec-4__content">
+            <h2 class="sec__title">Наш отдел разработок</h2>
+            <div class="sec-4__slider owl-carousel">
+                <div class="sec-4__slider__item">
+                    <div class="sec-4__slider__item__icon" style="background-image: url(img/avatar.png);"></div>
+                    <div class="sec-4__slider__item__text">
+                        <div class="sec-4__slider__item__title">Контсантин Константинопольский</div>
+                        <div class="sec-4__slider__item__role">Руководитель ответственный за производство</div>
+                        <div class="sec-4__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                        <a href="" class="btn border sec-4__slider__item__btn">Статьи</a>
+                    </div>
+                </div>
+                <div class="sec-4__slider__item">
+                    <div class="sec-4__slider__item__icon" style="background-image: url(img/avatar.png);"></div>
+                    <div class="sec-4__slider__item__text">
+                        <div class="sec-4__slider__item__title">Контсантин Константинопольский</div>
+                        <div class="sec-4__slider__item__role">Руководитель ответственный за производство</div>
+                        <div class="sec-4__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                        <a href="" class="btn border sec-4__slider__item__btn">Статьи</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====================== END sec-4 ====================== -->
+<!-- ====================== sec-5 ====================== -->
+<section class="sec-5">
+    <div class="page_container">
+        <h2 class="sec__title">Недёжность упаковки</h2>
+        <div class="sliderblock">
+            <div class="sliderblock__slider owl-carousel">
+                <div class="sliderblock__slider__item">
+                    <div class="sliderblock__slider__item__img" style="background-image: url(img/sec-5-item.jpg);"></div>
+                    <div class="sliderblock__slider__item__title">Название упаковки</div>
+                    <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                </div>
+                <div class="sliderblock__slider__item">
+                    <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sliderblock__slider__item__title">Название упаковки</div>
+                    <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                </div>
+                <div class="sliderblock__slider__item">
+                    <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sliderblock__slider__item__title">Название упаковки</div>
+                    <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                </div>
+                <div class="sliderblock__slider__item">
+                    <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sliderblock__slider__item__title">Название упаковки</div>
+                    <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                </div>
+                <div class="sliderblock__slider__item">
+                    <div class="sliderblock__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sliderblock__slider__item__title">Название упаковки</div>
+                    <div class="sliderblock__slider__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    <a href="/" class="sliderblock__slider__item__link btn border">Подробнее о наполнителе</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====================== END sec-5 ====================== -->
+<!-- ====================== sec-3 ====================== -->
+<section class="sec-3" style="background-image: url(img/sec-1-bg.jpg);">
+    <div class="page_container">
+        <div class="sec-3__content">
+            <div class="sec-3__content__listya-left" data-paralax-scene>
+                <img src="img/sec-3-listya-left.png" alt="" data-depth="0.3">
+                <img src="img/sec-3-listya-left-3.png" alt="" data-depth="1">
+            </div>
+            <div class="sec-3__content__listya-right" data-paralax-scene>
+                <img src="img/sec-3-listya-right.png" alt="" data-depth="0.5">
+                <img src="img/sec-3-listya-right-3.png" alt="" data-depth="1">
+            </div>
+            <h2 class="sec__title">Области пременения наполнителя <br> молочной продукции</h2>
+            <div class="sec-3__items">
+                <div class="sec-3__item">
+                    <div class="sec-3__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                    <div class="sec-3__item__text">
+                        <div class="sec-3__item__title">Заголово преимущества</div>
+                        <div class="sec-3__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    </div>
+                </div>
+                <div class="sec-3__item">
+                    <div class="sec-3__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                    <div class="sec-3__item__text">
+                        <div class="sec-3__item__title">Заголово преимущества</div>
+                        <div class="sec-3__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    </div>
+                </div>
+                <div class="sec-3__item">
+                    <div class="sec-3__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                    <div class="sec-3__item__text">
+                        <div class="sec-3__item__title">Заголово преимущества</div>
+                        <div class="sec-3__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    </div>
+                </div>
+                <div class="sec-3__item">
+                    <div class="sec-3__item__icon" style="background-image: url(img/sec-3-icon.png);"></div>
+                    <div class="sec-3__item__text">
+                        <div class="sec-3__item__title">Заголово преимущества</div>
+                        <div class="sec-3__item__desc">Дополнительное описание преимущества поясняющий заголовок на 3-4 строки</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====================== END sec-3 ====================== -->
+<!-- ====================== sec-6 ====================== -->
+<section class="sec-6">
+    <div class="page_container">
+        <div class="sec-6__content">
+            <h2 class="sec__title">Что мы ещё производим</h2>
+            <div class="sec-6__slider owl-carousel">
+                <div class="sec-6__slider__item">
+                    <div class="sec-6__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sec-6__slider__item__title">Творожная масса</div>
+                    <div class="sec-6__slider__item__desc">Теперь для йогурта или творожника </div>
+                    <a href="" class="btn border sec-6__slider__item__btn">Узнать подробнее</a>
+                </div>
+                <div class="sec-6__slider__item">
+                    <div class="sec-6__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sec-6__slider__item__title">Творожная масса</div>
+                    <div class="sec-6__slider__item__desc">Теперь для йогурта или творожника </div>
+                    <a href="" class="btn border sec-6__slider__item__btn">Узнать подробнее</a>
+                </div>
+                <div class="sec-6__slider__item">
+                    <div class="sec-6__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sec-6__slider__item__title">Творожная масса</div>
+                    <div class="sec-6__slider__item__desc">Теперь для йогурта или творожника </div>
+                    <a href="" class="btn border sec-6__slider__item__btn">Узнать подробнее</a>
+                </div>
+                <div class="sec-6__slider__item">
+                    <div class="sec-6__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sec-6__slider__item__title">Творожная масса</div>
+                    <div class="sec-6__slider__item__desc">Теперь для йогурта или творожника </div>
+                    <a href="" class="btn border sec-6__slider__item__btn">Узнать подробнее</a>
+                </div>
+                <div class="sec-6__slider__item">
+                    <div class="sec-6__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sec-6__slider__item__title">Творожная масса</div>
+                    <div class="sec-6__slider__item__desc">Теперь для йогурта или творожника </div>
+                    <a href="" class="btn border sec-6__slider__item__btn">Узнать подробнее</a>
+                </div>
+                <div class="sec-6__slider__item">
+                    <div class="sec-6__slider__item__img" style="background-image: url(img/slide-3.jpg);"></div>
+                    <div class="sec-6__slider__item__title">Творожная масса</div>
+                    <div class="sec-6__slider__item__desc">Теперь для йогурта или творожника </div>
+                    <a href="" class="btn border sec-6__slider__item__btn">Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ====================== END sec-6 ====================== -->
+<!-- ================================== news ================================== -->
+<div class="news">
+	<h2 class="sec__title">Новости</h2>
+	<div class="news__slider owl-carousel">
+		<!-- news__slider__item -->
+		<a href="" class="news__slider__item">
+			<span class="news__slider__item__date">20.11.2020</span>
+			<span class="news__slider__item__title">Запуск новой линейки молочного продукта</span>
+			<span class="news__slider__item__img" style="background-image: url(img/news__item.jpg)"></span>
+		</a>
+		<!--END news__slider__item -->
+		<!-- news__slider__item -->
+		<a href="" class="news__slider__item">
+			<span class="news__slider__item__date">20.11.2020</span>
+			<span class="news__slider__item__title">Запуск новой линейки молочного продукта</span>
+			<span class="news__slider__item__img" style="background-image: url(img/news__item.jpg)"></span>
+		</a>
+		<!--END news__slider__item -->
+		<!-- news__slider__item -->
+		<a href="" class="news__slider__item">
+			<span class="news__slider__item__date">20.11.2020</span>
+			<span class="news__slider__item__title">Запуск новой линейки молочного продукта</span>
+			<span class="news__slider__item__img" style="background-image: url(img/news__item.jpg)"></span>
+		</a>
+		<!--END news__slider__item -->
+		<!-- news__slider__item -->
+		<a href="" class="news__slider__item">
+			<span class="news__slider__item__date">20.11.2020</span>
+			<span class="news__slider__item__title">Запуск новой линейки молочного продукта</span>
+			<span class="news__slider__item__img" style="background-image: url(img/news__item.jpg)"></span>
+		</a>
+		<!--END news__slider__item -->
+		<!-- news__slider__item -->
+		<a href="" class="news__slider__item">
+			<span class="news__slider__item__date">20.11.2020</span>
+			<span class="news__slider__item__title">Запуск новой линейки молочного продукта</span>
+			<span class="news__slider__item__img" style="background-image: url(img/news__item.jpg)"></span>
+		</a>
+		<!--END news__slider__item -->
+	</div>
+</div>
+<!-- ==================================END news================================== -->
+<!-- ============================= modal =================================== -->
+<section class="modal__wrapper" data-modal="1">
+    <div class="modal">
+        <div class="modal__close" data-modal-close="1"></div>
+        <div class="modal__content">
+            <div class="modal__title__before">У Вас появились вопросы?</div>
+            <div class="modal__title">Оставьте заявку</div>
+            <form action="/" class="formblock__form" data-validate="submit-your-application">
+                <div class="formblock__form__inputgroup">
+                    <label for="">Представьтесь (ФИО):</label>
+                    <input name="name" type="text" placeholder="Константин Константинопольский">
+                </div>
+                <div class="formblock__form__inputgroup">
+                    <label for="">Ваша компания:</label>
+                    <input name="name" type="text" placeholder="Константин Константинопольский">
+                </div>
+                <div class="formblock__form__inputgroup">
+                    <label for="">Ваш E-mail:</label>
+                    <input name="name" type="text" placeholder="Константин Константинопольский">
+                </div>
+                <div class="formblock__form__inputgroup">
+                    <label for="">Введите Ваш контактный телефон:</label>
+                    <input name="phone" data-mask="phone" type="text" placeholder="+7 (999) 160-15-14">
+                </div>
+                
+                <div class="formblock__politics">
+                    <label for="checkbox1" class="formblock__politics__label">
+                        <input type="checkbox" id="checkbox1" class="formblock__checkbox" checked="">
+                        <span class="box">
+                            <span class="box__circle"></span>
+                        </span>
+                    </label>
+                    <div class="formblock__politics__text">Отправляя данное сообщение, вы соглашаетесь с <a href="">политикой конфинденциальности</a> </div>
+                </div>
+                <button class="btn border">Отправить</button>
+            </form>
+        </div>
+    </div>
+</section>
 
-
-
-
-
+<section class="modal__wrapper" data-modal="success">
+    <div class="modal">
+        <div class="modal__close" data-modal-close="success"></div>
+        <div class="modal__content">
+            <div class="modal__title__before">Готово!</div>
+            <div class="modal__title">Заявка отправлена!</div>
+        </div>
+    </div>
+</section>
+<!-- =============================END modal =================================== -->
 {% endblock %}
