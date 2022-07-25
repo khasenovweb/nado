@@ -1947,6 +1947,7 @@ input.error {
     top: 0;
     width: 100%;
     height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
   }
   .modal__content__product__title {
@@ -1989,6 +1990,7 @@ input.error {
 }
 .articlesheader__content .btn {
   min-width: -webkit-max-content;
+  min-width: -moz-max-content;
   min-width: max-content;
   margin-top: 5px;
 }

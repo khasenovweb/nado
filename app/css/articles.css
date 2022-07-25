@@ -31,6 +31,7 @@
 }
 .articlesheader__content .btn {
   min-width: -webkit-max-content;
+  min-width: -moz-max-content;
   min-width: max-content;
   margin-top: 5px;
 }

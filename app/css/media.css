@@ -135,6 +135,7 @@
     padding-left: 30px;
     padding-right: 30px;
     width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
   }
   .team__item {
